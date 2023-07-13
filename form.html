@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning About Forms</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Personal Information</h2><b></legend>
+    <form action="/submit-form" method="post" target="_blank"><b><strong><br>
+        <label for="name">Enter Your Full Name</label><br><br><br>
+        <input type="text" id="name" placeholder="Use your real name"><br><br>
+        <label for="email">Enter Your Email</label><br><br><br>
+        <input type="email" id="email" placeholder="Avoid special symbols"><br><br>
+        <label for="password">Enter your Password</label><br><br><br>
+        <input type="password" id="password" placeholder="Minimum 7 characters"><br><br>
+        <label for="profile-picture">Please select a proper profile picture</label><br><br><br>
+        <input type="file" id="profile-picture" required><br><br><br>
+        <label for="dob">Enter Your Full Name</label><br><br>
+        <input type="date" id="dob" placeholder="Use your real name"><br><br><br>
+        <label for="telephone">Enter Your Telephone number</label><br><br>
+        <input type="tel" id="telephone" placeholder="starting with +91"><br><br>
+    </fieldset>
+    </form>
+    
+    <fieldset>
+        <legend><h2>Preferences</h2><b></legend>
+    <form action="/submit-form" method="post" target="_blank"><b><strong><br>
+        <label for="color">Select your favorate color</label><br><br><br>
+        <input type="color" id="color" placeholder="Use your real name"><br><br>
+        <label for="fruit">Your favorate Fruit<br><br>
+        <select width=300 style="width: 350px" size="10" multiple>
+            <option value="App-le">Apple</option>
+            <option value="devil">devil</option>
+            <option value="angelic">Wings</option>
+            <option value="gum gum">Rubber</option>
+            <option value="sugardragon">dragon-fruit</option>
+            <option value="watermellon">Melons</option>
+            <option value="oran-ge">orange apple</option>
+            </select></label><br><br>
+            <label for="Comments">Comments:</label><br>
+            <input textarea id="comments" rows="3" cols="40" placeholder="Enter your commenrts">
+            <label for="checkbox"><br><br>
+            <input type="checkbox" value="yes">
+            Subscribe to news letter
+            </label>
+            <label for="gender"><br><br>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label><br><br>
+            <label for="gender">
+                <input type="radio" name="gender" value="female">
+                Female
+            </label><br><br>
+            <label for="gender">
+                <input type="radio" name="gender" value="other">
+                Decline to Specify
+            </label><br><br>
+            <label for="skills">skills:</label>
+            <input type="text" id="skills" list="skills-list" required>
+            <datalist id="skills-list" multiple option value= "HTML" <option value="CSS", <option value="JavaScript"></option>
+                <option value="Python">
+                    <option value="Snake">
+                        <option value="JAVA">
+                            <option value="CSS">
+                                <option value="HTML">
+                                </option>
+                            </option>
+                        </option>
+                    </option>
+                </select>
+    </fieldset>
+    </form>
+</body>
+</html>
